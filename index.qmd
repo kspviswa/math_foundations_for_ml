@@ -1,5 +1,5 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This is my notes based on Lectures on Mathematical Foundations for Machine Learning by Prof. Pratosh AP, NPTEL Course. The course playlist is available in [YouTube](https://youtube.com/playlist?list=PLgMDNELGJ1Cay-Q9Cn8KcpUcC58NDWuiu&si=5ALB2xS0go6PkdkR).
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+These are my personal notes. I'm sharing it for public benifit. If you find it useful or have any suggestions / comments, please use your GH handle to comment using utterences below.

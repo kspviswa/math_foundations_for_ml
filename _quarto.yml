@@ -1,14 +1,14 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "Math Foundations for ML"
-  author: "Norah Jones"
+  title: "Notes on : Math Foundations for ML NPTEL Lectures by Prof. Pratosh AP"
+  author: "Viswa Kumar"
   date: "2026-10-12"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - lecture1.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -16,8 +16,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - sketchy
   pdf:
     documentclass: scrreprt
 

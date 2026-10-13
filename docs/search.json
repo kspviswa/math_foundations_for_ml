@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Notes on : Math Foundations for ML NPTEL Lectures by Prof. Pratosh AP",
+    "section": "",
+    "text": "Preface\nThis is my notes based on Lectures on Mathematical Foundations for Machine Learning by Prof. Pratosh AP, NPTEL Course. The course playlist is available in YouTube.\nThese are my personal notes. I’m sharing it for public benifit. If you find it useful or have any suggestions / comments, please use your GH handle to comment using utterences below.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "lecture1.html",
+    "href": "lecture1.html",
+    "title": "1  Lecture 1 : Overview of Function Approximation.",
+    "section": "",
+    "text": "1.1 What is a function?\nIn simple terms, a function is a mapping engine that transforms an input set to an output set. This input set is called as domain set and the output set is called as range set. The mapping is done using a mathematical expression called as function.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecture 1 : Overview of Function Approximation.</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#what-is-a-function",
+    "href": "lecture1.html#what-is-a-function",
+    "title": "1  Lecture 1 : Overview of Function Approximation.",
+    "section": "",
+    "text": "1.1.1 Mathematically defining a function of sets:\nLet \\(X\\) : \\(domain\\ set\\) (input)\nLet \\(Y\\) : \\(range\\ set\\) (output)\nGiven a pairs \\(D\\) : \\(\\{(x_1, y_1), (x_2, y_2), (x_3, y_3), ... , (x_n, y_n)\\}\\) where \\(x_i \\in X\\) and \\(y_i \\in Y\\) for \\(i = 1, 2, 3, ..., n\\).\nAssumption that \\(\\ \\exists \\ \\) a function \\(f\\) such that \\(f(x_i) = y_i\\) for all \\(i = 1, 2, 3, ..., n\\).\nThis function \\(f\\) is unknown, hence we assume. All we have is some obervation \\(D\\) which is a part of \\(x_i\\) and \\(y_i\\) for a set of \\(i\\).\nSo, given D, can we approximate a function \\(f\\) such that for future unseen \\(x_i\\) we can predict \\(y_i\\) using the approximated function \\(\\hat{f}\\) such that \\(\\hat{f}(x_i) \\approx y_i\\).\nThis approximation of function is called as Function Approximation.\n\n\n\n\n\n\nTip\n\n\n\nProf. gave an interesting example. In olden days, the problem of speech recognition was solved using deterministic methods, where the audio data was mapped to waveform guides. For every character sound, a reference guide waveform was captured and it will be mapped against test data to predict the character. But the same problem was later solved using probablistic method.\n\n\n\n\n1.1.2 Why Approximate and What is probablistic way of thinking about function approximation?\n\\(F = M * a\\) is a linear function where force is a direct multiple of mass and acceleration. Modelling such linear functions are easy and hence we can use deterministic methods. This because for any given \\(M\\) and \\(a\\), we can always predict \\(F\\) using the function \\(F = M * a\\).\nBut for certain cases like, predicting a cancer diesease from set of X-Ray images, predicting the gender of a person from a set of images, predicting the price of a house from a set of features, etc. are not deterministic. This is because the correlation between inputs and outputs are not pure physics.\nFor example, given a set of X-Ray images, the amount of information present in the image is simply the density of light’s reflection from the bones and tissues. Whereas the prediction of disease is based on a concept called “disease” which is a human defined concept. The determination of a disease is based on other signals that is not correlated to the light’s reflection. Hence, the correlation between the input and output is not deterministic. For such cases, we need a way to probablistic way of thinking about function approximation.\n\n\n1.1.3 What is a probablistic way of thinking about function approximation?\nWhile deterministic function study the physics of the problem, probablistic function study the statistics of the problem. In probablistic function approximation, we don’t model the function. Instead :\n\nwe take numerous measurements of the input - output pairs (which is the \\(D\\) or called as data)\nwe assume a function \\(f\\) that randomly maps the input to output. We take a wild guess\nwe then measure the accuracy of the mapping and based on the error, we update the function \\(f\\) to a new function \\(\\hat{f}\\) that is more accurate than the previous function \\(f\\). Or in other words, we refine our guess.\n\n\n\n1.1.4 Formalizing the equation for XRay image to disease prediction problem:\nAn XRay image is a matrix of pixel values. Each pixel value can range from 0 to 255. The length of the image is measured in pixel matrices, where there are \\(p\\) rows and \\(q\\) columns. Hence, the total number of pixels in the image is \\(p * q\\). Each pixel value can be represented as a vector of length \\(p * q\\). Hence, the XRay image can be represented as a vector of length \\(p * q\\) .\nSo \\(x_i\\) is a vector in the domain set of \\(p * q\\) length. If we assume all the values are real numbers, then \\(x_i \\in \\mathbb{R}^{p * q}\\).\nHere \\(p * q\\) is the \\(D\\) we saw above. To generalize, we can write like this :\n\\(x_i \\in \\mathbb{R}^{d}\\) where \\(d = p * q\\). (in this example)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecture 1 : Overview of Function Approximation.</span>"
+    ]
+  }
+]
